@@ -2,11 +2,20 @@ My utility
 
 ## Setup
 
-You must do this before using `Main.ps1`.
+You must do this before this.
 
 ```shell-session
 $ cd $this_repo
 $ powershell.exe Setup.ps1  # Please check this result is including 'AudioDeviceCmdlets'
+```
+
+## Usage
+
+```shell-session
+$ powershell.exe For-Quest.ps1  # to switch Oculus Link devices
+
+# Or you can use
+# - Usual.ps1 to switch usual devices
 ```
 
 ## References
