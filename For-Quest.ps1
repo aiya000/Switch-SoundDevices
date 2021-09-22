@@ -8,11 +8,17 @@ try {
   $env:PSModulePath += ";$(Convert-Path .)"
   Import-Module SetAudioDeviceByName -ErrorAction Stop
 
-  Write-Output "Will: SetAudioDeviceByName Recording '$InputDevice'"
   SetAudioDeviceByName 'Recording' $InputDevice
+  Write-Output "A recording (mic) device set: $InputDevice"
+  Write-Output '- - - - -'
+  Write-Output ''
 
-  Write-Output "Will: SetAudioDeviceByName Playback '$OutputDevice'"
   SetAudioDeviceByName 'Playback' $OutputDevice
+  Write-Output "A Playback (speaker) device set: $OutputDevice"
+  Write-Output '- - - - -'
+  Write-Output ''
 } catch {
   Write-Output $_
 }
+
+Read-Host 'Press enter to close'
