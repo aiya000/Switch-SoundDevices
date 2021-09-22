@@ -1,4 +1,4 @@
-My utility
+Only a click to switch Windows audio device setting.
 
 ## Setup
 
@@ -10,6 +10,13 @@ $ powershell.exe Setup.ps1  # Please check this result is including 'AudioDevice
 ```
 
 ## Usage
+
+Examples are:
+
+- Usual.ps1
+- For-Quest.ps1
+
+You can use this or edit you like.
 
 ```shell-session
 $ powershell.exe For-Quest.ps1  # to switch Oculus Link devices
